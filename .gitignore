@@ -79,7 +79,7 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
-cdl/data/doc/
+datalab/data/doc/
 
 # PyBuilder
 target/

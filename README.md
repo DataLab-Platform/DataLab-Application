@@ -1,6 +1,6 @@
-# datalab-app
+# datalab-platform
 
-Placeholder for the future 'datalab-app' package, which will include the graphical interface and plugins of the DataLab application.
+Placeholder for the future 'datalab-platform' package, which will include the graphical interface and plugins of the DataLab application.
 
 This package name is reserved for future use.
 

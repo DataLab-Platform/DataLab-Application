@@ -1,4 +1,4 @@
-datalab-processing
+sigima
 PyQt5
 plotpy
 PythonQwt

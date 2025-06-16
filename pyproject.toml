@@ -1,7 +1,7 @@
 # DataLab application setup configuration file
 
 [project]
-name = "datalab-app"
+name = "datalab-platform"
 description = "DataLab is a data processing and analysis software for scientific and industrial applications"
 authors = [{ name = "Pierre Raybaut", email = "p.raybaut@codra.fr" }]
 maintainers = [
@@ -36,7 +36,7 @@ classifiers = [
 ]
 requires-python = ">=3.9, <4"
 dependencies = [
-    "datalab-processing",
+    "sigima",
     "PlotPy >= 2.7.4",
     "psutil >= 5.7",
 ]
@@ -51,9 +51,9 @@ Homepage = "https://datalab-platform.com/"
 Documentation = "https://datalab-platform.com/"
 
 [project.gui-scripts]
-datalab = "datalab_app.app:run"
-datalab-demo = "datalab_app.tests.scenarios.demo:run"
-datalab-tests = "datalab_app.tests:run"
+datalab = "datalab.app:run"
+datalab-demo = "datalab.tests.scenarios.demo:run"
+datalab-tests = "datalab.tests:run"
 
 [project.optional-dependencies]
 qt = ["PyQt5"]
@@ -72,7 +72,7 @@ doc = [
 test = ["pytest", "pytest-xvfb"]
 
 [tool.setuptools.packages.find]
-include = ["datalab_app*"]
+include = ["datalab*"]
 
 [tool.setuptools.package-data]
 "*" = [
@@ -99,10 +99,10 @@ include = ["datalab_app*"]
 ]
 
 [tool.setuptools.dynamic]
-version = { attr = "datalab_app.__version__" }
+version = { attr = "datalab.__version__" }
 
 [tool.pytest.ini_options]
-addopts = "datalab_app"
+addopts = "datalab"
 
 [tool.ruff]
 exclude = [".git", ".vscode", "build", "dist", "*.ipynb"]
